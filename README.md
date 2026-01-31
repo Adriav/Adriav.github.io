@@ -9,7 +9,7 @@ I'm dedicated to building elegant solutions to complex problems through clean, e
 ## What You'll Find Here
 
 - **Projects** - A collection of my recent work and open-source contributions
-    - Pokemon TCG
+    - Pokedex TCG
     - HomeCloud
     - Login Reque (University Class test project in spanish)
 - **Skills** - Java, Python, JavaScript, MongoDB, TypeScript, Kotlin, Windows Server, Linux, Kubernetes
