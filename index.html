@@ -1,2 +1,203 @@
-<h1>Pokedex TCG</h1>
-<p>Downlad the <a href="https://github.com/Adriav/Pokedex-TCG/releases/download/v1.0.0/pokedex-tcg.apk">APK</a></p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Adrián Rivera</title>
+  <meta name="description" content="Portafolio personal de Adrián Rivera – Desarrollo de software, Android y backend." />
+  <style>
+    :root {
+      --bg: #0f172a;        /* slate-900 */
+      --card: #111827;      /* gray-900 */
+      --text: #e5e7eb;      /* gray-200 */
+      --muted: #9ca3af;     /* gray-400 */
+      --accent: #38bdf8;    /* sky-400 */
+      --accent-2: #22c55e;  /* green-500 */
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #1e293b, transparent), var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      padding: 4rem 1.5rem 3rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin: 0 0 0.5rem;
+    }
+
+    header p {
+      color: var(--muted);
+      max-width: 720px;
+    }
+
+    .cta {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.6rem 1rem;
+      border-radius: 0.6rem;
+      background: var(--accent);
+      color: #020617;
+      font-weight: 600;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid #334155;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 1.5rem 4rem;
+      display: grid;
+      gap: 3rem;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #020617, var(--card));
+      border: 1px solid #1f2937;
+      border-radius: 1rem;
+      padding: 1.25rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.25rem;
+    }
+
+    .grid.cols-2 {
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      background: #020617;
+      border: 1px solid #1f2937;
+      font-size: 0.8rem;
+      margin-right: 0.4rem;
+      margin-top: 0.4rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      border-top: 1px solid #1f2937;
+    }
+
+    footer span { color: var(--accent-2); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hola, soy Adrián 👋</h1>
+    <p>
+      Desarrollador de software con enfoque en <strong>Android (Kotlin + Jetpack Compose)</strong>,
+      backend y sistemas. Me gusta construir apps limpias, seguras y fáciles de mantener.
+    </p>
+    <div class="cta">
+      <a class="btn" href="https://github.com/mi-usuario" target="_blank">GitHub</a>
+      <a class="btn secondary" href="#proyectos">Ver proyectos</a>
+      <a class="btn secondary" href="mailto:correo@ejemplo.com">Contacto</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <div class="card">
+        <p>
+          Tengo experiencia trabajando con Android moderno, APIs REST, Docker y Kubernetes.
+          Me interesa especialmente la arquitectura limpia, la automatización y el aprendizaje continuo.
+        </p>
+      </div>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Mobile</h3>
+          <span class="tag">Kotlin</span>
+          <span class="tag">Jetpack Compose</span>
+          <span class="tag">Hilt</span>
+          <span class="tag">Firebase</span>
+        </div>
+        <div class="card">
+          <h3>Backend / Infra</h3>
+          <span class="tag">REST APIs</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">Linux</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>📱 Pokémon TCG App</h3>
+          <p>
+            Aplicación Android para gestionar una colección de cartas Pokémon TCG usando una API pública.
+          </p>
+          <span class="tag">Android</span>
+          <span class="tag">Kotlin</span>
+          <span class="tag">Compose</span>
+        </div>
+        <div class="card">
+          <h3>☁️ Laboratorio Kubernetes</h3>
+          <p>
+            Clúster con múltiples nodos para pruebas de despliegue, networking y alta disponibilidad.
+          </p>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">Docker</span>
+          <span class="tag">DevOps</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <div class="card">
+        <p>
+          ¿Te interesa colaborar o tienes alguna pregunta?
+          Escríbeme a <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a>
+          o encuéntrame en GitHub.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con <span>❤</span> y GitHub Pages · © 2026</p>
+  </footer>
+</body>
+</html>
