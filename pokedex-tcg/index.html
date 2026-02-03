@@ -1,13 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pokémon TCG App</title>
+  <meta name="description" content="Aplicación Android para gestionar tu colección de cartas Pokémon TCG." />
+
+  <!-- Reutiliza los estilos globales del portafolio -->
+  <link rel="stylesheet" href="/styles.css" />
+
+  <style>
+    /* Estilos específicos de esta página */
+    .project-header {
+      max-width: 900px;
+      margin: 4rem auto 2rem;
+      padding: 0 1.5rem;
+    }
+
+    .project-header h1 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      margin-bottom: 0.5rem;
+    }
+
+    .project-header p {
+      color: var(--muted);
+      max-width: 700px;
+    }
+
+    .download {
+      max-width: 900px;
+      margin: 2rem auto 4rem;
+      padding: 0 1.5rem;
+    }
+
+    .download-card {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .apk-info {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+  </style>
 </head>
 <body>
-  <h1>Pokémon TCG App</h1>
-  <p>Proyecto Android para gestionar cartas Pokémon TCG.</p>
 
-  <a href="/">← Volver al portafolio</a>
+  <header class="project-header">
+    <h1>📱 Pokémon TCG App</h1>
+    <p>
+      Aplicación Android desarrollada con <strong>Kotlin</strong> y <strong>Jetpack Compose</strong>
+      para llevar el control de una colección personal de cartas Pokémon TCG. 
+      Consume una API pública para obtener información actualizada de cartas, sets y rarezas.
+    </p>
+  </header>
+
+  <main>
+    <section class="download">
+      <h2>Descarga</h2>
+      <div class="card download-card">
+        <p>
+          Puedes descargar la versión actual de la aplicación en formato APK para instalarla
+          manualmente en tu dispositivo Android.
+        </p>
+
+        <a
+          class="btn"
+          href="apk/pokemon-tcg.apk"
+          download
+        >
+          ⬇️ Descargar APK
+        </a>
+
+        <p class="apk-info">
+          Versión: 1.0.0 · Requiere Android 8.0 o superior
+        </p>
+      </div>
+
+      <p style="margin-top: 1.5rem;">
+        <a href="/">← Volver al portafolio</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyecto personal · © 2026</p>
+  </footer>
+
 </body>
 </html>
